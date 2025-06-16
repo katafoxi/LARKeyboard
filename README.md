@@ -1,4 +1,5 @@
 # LARKeyboard
+![1750104831519](https://github.com/user-attachments/assets/b53b73be-e556-4599-bc34-2baae3e7fba7)
 
 Кастомная механическая клавиатура с открытым исходным кодом.  
 

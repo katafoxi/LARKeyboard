@@ -9,7 +9,13 @@
 - **Микроконтроллер:** (NRF52840 Development Board )  
 - **Кейкапы:** ( MX )  
 - **Интерфейс:** (USB-C, Bluetooth)  
-- **Особенности:** (интегрированный трекболл ProtoArc EM04 Wireless, функционирующий независимо от клавиатуры),  
+- **Особенности:** 
+  - длительное время автономной работы, благодаря 4 акумуляторам формата AA и возможности использования донгла
+  - интегрированный серийный трекболл ProtoArc EM04 Wireless, функционирующий независимо от клавиатуры
+  - 9 клавиш на thumbcluster
+  - сборка без плат
+  - подходит для больших и маленьких рук
+
 
 ## 🔗 Быстрые ссылки
 
@@ -265,6 +271,7 @@
 [Процесс](https://zmk.dev/docs/user-setup#installing-the-firmware) прошивки сдандартный для ZMK.
 [Репозиторий с прошивкой клавиатуры](https://github.com/katafoxi/zmk-keyboard-lark)
 
+---
 
 <div style="background-color: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin: 10px 0; text-align: center;">
 

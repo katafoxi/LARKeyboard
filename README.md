@@ -1,9 +1,21 @@
 # LARKeyboard
+
 Кастомная механическая клавиатура с открытым исходным кодом и интегрированным трекболом.
 
-![93](images/93.jpg) ![94](images/94.jpg) ![91](images/91.jpg) 
+![LARKeyboard — вид спереди](images/93.jpg) ![LARKeyboard — вид сбоку](images/94.jpg) ![LARKeyboard — трекбол и thumb cluster](images/91.jpg)
 
-## **Характеристики**  
+---
+
+## 📑 Содержание
+
+- [Характеристики](#характеристики)
+- [Быстрые ссылки](#-быстрые-ссылки)
+- [Hardware](#-hardware) — BOM, инструменты, модели, этапы сборки
+- [Дополнительная информация](#-дополнительная-информация) — прошивка и ссылки
+
+---
+
+## Характеристики  
 - **Прошивка:** ZMK 
 - **Макет:** Split Dactyl Manuform
 - **Микроконтроллер:** (NRF52840 Development Board )  
@@ -11,7 +23,7 @@
 - **Интерфейс:** (USB-C, Bluetooth)  
 - **Особенности:** 
   - длительное время автономной работы, благодаря 4 акумуляторам формата AA и возможности использования донгла
-  - интегрированный серийный трекболл ProtoArc EM04 Wireless, функционирующий независимо от клавиатуры
+  - интегрированный серийный трекбол ProtoArc EM04 Wireless, функционирующий независимо от клавиатуры
   - 9 клавиш на thumbcluster
   - сборка без плат
   - подходит для больших и маленьких рук
@@ -32,13 +44,13 @@
 | Этап сборки                           | Компонент                                                        | Количество |
 | ------------------------------------- | :--------------------------------------------------------------- | ---------: |
 | 3D-печать                             | Филамент для 3D-печати                                           |     700 гр |
-| Печать деталей левой половины         | [_left_print.stp](hardware\3d_models_to_print\_left_print.stp)   |       1 шт |
-| Печать деталей правой половины        | [_right_print.stp](hardware\3d_models_to_print\_right_print.stp) |       1 шт |
+| Печать деталей левой половины         | [_left_print.stp](hardware/_left_print.stp)   |       1 шт |
+| Печать деталей правой половины        | [_right_print.stp](hardware/_right_print.stp) |       1 шт |
 | Удаление поддержек                    |                                                                  |            |
 | Установка заглушек                    | Заглушка в гнездо под покраску                                   |      60 шт |
 | Ошкуривание                           |                                                                  |            |
 | Покраска                              | Грунтовка + Эмаль                                                | 1+1 баллон |
-| Удаление  заглушек                    |                                                                  |            |
+| Удаление заглушек                     |                                                                  |            |
 | Установка вплавляемых втулок          | Втулка вплавляемая М3х5                                          |      24 шт |
 | Установка Hotswap коннекторов         | Коннектор Hotswap MX                                             |      59 шт |
 | Пайка столбцов                        | Проволока красная медная эмалированная  QA-1/155R 2UEW ø0.2мм    |      500 м |
@@ -98,7 +110,7 @@
 <summary>Исходная сборка </summary>
 
 `hardware/_LARKeyboard_full_assambly.stp`
-![_LARKeyboard_full_assambly](hardware/_LARKeyboard_full_assambly.png)
+![Полная сборка LARKeyboard](hardware/_LARKeyboard_full_assambly.png)
 </details>
 
 
@@ -109,7 +121,7 @@
 </details>
 
 <details>
-<summary>🎥Видео последовательности сборки правой половинки</summary>
+<summary>🎥 Видео последовательности сборки правой половинки</summary>
 
 ![build_right](images/_right_build.gif)
 </details>
@@ -233,7 +245,7 @@
 
 <div style="background-color: #d4edda; color: #155724; padding: 12px; border-radius: 5px; margin: 10px 0;">
 
-**💡 Инструкция:** Обжать провода выводы B+ и В- от платы (папа), 
+**💡 Инструкция:** Обжать провода (выводы B+ и B− от платы — папа), 
 соединить с выводами от держателя батареек. Установить крышки.
 
 </div>
@@ -258,19 +270,20 @@
 
 ## 📚 Дополнительная информация
 
-<div style="background-color: #e9ecef; color: #495057; padding: 15px; border-radius: 5px; margin: 10px 0;">
+### ⌨️ Прошивка (Firmware)
+
+Процесс прошивки стандартный для ZMK:
+
+1. [Официальная инструкция ZMK](https://zmk.dev/docs/user-setup#installing-the-firmware) — установка и настройка
+2. [Репозиторий прошивки LARKeyboard](https://github.com/katafoxi/zmk-keyboard-lark) — клонировать, собрать и прошить
 
 ### 🔗 Полезные ссылки
-- [📁 Репозиторий с прошивкой](https://github.com/katafoxi/zmk-keyboard-lark)
-- [📊 Google Sheets с легендами](https://docs.google.com/spreadsheets/d/1xXg7V_umpOhjsuPLZJ3ickMg2kA1LSvM3Gqmz-Sg8EQ/edit)
 
-</div>
-
----
-
-## Firmware
-[Процесс](https://zmk.dev/docs/user-setup#installing-the-firmware) прошивки сдандартный для ZMK.
-[Репозиторий с прошивкой клавиатуры](https://github.com/katafoxi/zmk-keyboard-lark)
+| Ресурс | Ссылка |
+|--------|--------|
+| 📁 Прошивка | [zmk-keyboard-lark](https://github.com/katafoxi/zmk-keyboard-lark) |
+| 📊 Легенды и кеймап | [Google Таблицы](https://docs.google.com/spreadsheets/d/1xXg7V_umpOhjsuPLZJ3ickMg2kA1LSvM3Gqmz-Sg8EQ/edit) |
+| 📄 Статья на Habr | [Большая статья о сборке](https://habr.com/ru/articles/946684/) |
 
 ---
 
